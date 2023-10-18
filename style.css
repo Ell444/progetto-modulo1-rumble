@@ -27,14 +27,12 @@ body {
 /*GENERICI*/
 body > header {
   grid-area: he;
-  background-color: #f3f5f8;
 }
 body > aside {
   grid-area: as;
 }
 body > nav {
   grid-area: na;
-  background-color: yellow;
 }
 body > main {
   grid-area: ma;
@@ -67,6 +65,17 @@ a {
   font-size: 12px;
   font-weight: 200;
   color: hsl(0, 2%, 42%);
+}
+aside {
+  overflow: auto;
+  border-right: 1px solid lightgray;
+}
+
+aside::-webkit-scrollbar {
+  visibility: hidden;
+}
+.aside-titles {
+  font-size: 10px;
 }
 
 /*HEADER*/
@@ -121,10 +130,10 @@ body > header > section {
   height: 100%;
 }
 /*ASIDE*/
-aside {
-  overflow: auto;
-}
-.aside-top {
+
+.aside-top,
+.featured-container,
+.theme-container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -138,23 +147,31 @@ aside {
   border-radius: 50%;
 }
 .featured-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   padding: 2rem 0.5rem;
   gap: 0.5rem;
 }
 .theme-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   text-align: center;
   gap: 1.5rem;
   font-size: 10px;
   padding: 1rem 0;
 }
-.aside-titles {
-  font-size: 10px;
+/*NAV*/
+nav {
+  overflow: auto;
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.5rem 1rem;
+}
+
+.nav-container > section > span {
+  background-color: #e4e4e8;
+  border-radius: 1.5rem;
+  padding: 0.5rem;
 }
 
 /*MAIN*/
