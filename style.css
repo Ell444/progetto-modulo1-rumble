@@ -58,6 +58,17 @@ a {
   padding: 0.5rem 0.8rem;
   outline: none;
 }
+.title-btn-container > button:hover {
+  background-color: #74cc1d;
+}
+#sign-in-btn:hover {
+  background-color: #eaeaea;
+  cursor: pointer;
+}
+#sign-up-btn:hover {
+  background-color: #eaeaea;
+  cursor: pointer;
+}
 .text-container > strong {
   font-size: 14px;
 }
@@ -156,6 +167,7 @@ body > header > section {
   font-size: 10px;
   padding: 1rem 0;
 }
+
 /*NAV*/
 nav {
   overflow: auto;
@@ -169,9 +181,14 @@ nav {
 }
 
 .nav-container > section > span {
-  background-color: #e4e4e8;
+  background-color: #f2efef;
   border-radius: 1.5rem;
   padding: 0.5rem;
+  font-size: 14px;
+}
+.nav-container > section > span:hover {
+  background-color: #8b98a2;
+  cursor: pointer;
 }
 
 /*MAIN*/
@@ -253,6 +270,13 @@ body > footer > section {
 .terms,
 .copyright {
   font-size: 12px;
+}
+
+.terms > a:hover {
+  text-decoration: underline;
+}
+.about-us > a:hover {
+  text-decoration: underline;
 }
 .copyright {
   color: #8b98a2;
