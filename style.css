@@ -1,6 +1,7 @@
 /*GENERICI*/
 :root {
   font-size: 16px;
+  font-family: sans-serif;
 }
 
 * {
@@ -38,7 +39,6 @@ body > nav {
 }
 body > main {
   grid-area: ma;
-  background-color: green;
 }
 body > footer {
   grid-area: fo;
@@ -50,6 +50,7 @@ body > header {
   display: flex;
   justify-content: space-between;
   padding: 0 2rem;
+  border-bottom: 1px solid lightgray;
 }
 
 body > header > section {
@@ -98,6 +99,35 @@ body > header > section {
 /*ASIDE*/
 
 /*MAIN*/
+
+.top-main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: auto;
+  padding: 2rem 2rem;
+  background-color: #e9ebee;
+  border-bottom: 1px solid lightgrey;
+}
+.main-img > img {
+  border-radius: 1rem;
+}
+.main-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  padding: 0 2.5rem;
+}
+.main-text > h4 {
+  color: darkgray;
+  font-weight: 200;
+}
+.main-text > h3 {
+  font-size: 22px;
+}
+.main-text > p {
+  font-size: 15px;
+}
 
 /*FOOTER*/
 
