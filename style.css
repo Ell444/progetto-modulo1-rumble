@@ -1,12 +1,49 @@
 /*GENERICI*/
+:root {
+  font-size: 16px;
+}
+
 * {
+  box-sizing: border-box;
   padding: 0;
   margin: 0;
-  font-size: 16px;
 }
 
 img {
   width: 100%;
+}
+
+body {
+  height: 100vh;
+  display: grid;
+  grid-template-areas:
+    "he he"
+    "as na"
+    "as ma"
+    "as fo";
+  grid-template-columns: 200px 1fr;
+  grid-template-rows: 69px 60px 1fr 88px;
+}
+
+body > header {
+  grid-area: he;
+  background-color: red;
+}
+body > aside {
+  grid-area: as;
+  background-color: blue;
+}
+body > nav {
+  grid-area: na;
+  background-color: yellow;
+}
+body > main {
+  grid-area: ma;
+  background-color: green;
+}
+body > footer {
+  grid-area: fo;
+  background-color: magenta;
 }
 
 /*HEADER*/
