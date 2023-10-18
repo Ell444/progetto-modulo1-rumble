@@ -27,7 +27,6 @@ body {
 
 body > header {
   grid-area: he;
-  background-color: red;
 }
 body > aside {
   grid-area: as;
@@ -47,11 +46,62 @@ body > footer {
 }
 
 /*HEADER*/
+body > header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 2rem;
+}
 
+body > header > section {
+  display: flex;
+  align-items: center;
+}
+.logo-section,
+.btn-section {
+  gap: 1.5rem;
+}
+.btn-section > button {
+  background-color: transparent;
+  border: 3px solid #74cc1d;
+  border-radius: 1.5rem;
+  font-size: 14px;
+  padding: 0.7rem 1rem;
+  outline: none;
+}
+#sign-in-btn {
+  border: none;
+}
+
+.search-bar-section > input {
+  height: 33px;
+  border: 1px solid lightgray;
+  border-right: none;
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+  font-size: 1rem;
+  padding: 0.4rem 0.4rem;
+  width: 30vw;
+}
+
+.search-bar-section > button {
+  height: 33px;
+  background-color: transparent;
+  border: 1px solid lightgray;
+  border-left: none;
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  padding: 0.4rem 0.4rem;
+}
+.search-bar-section > button > img {
+  height: 100%;
+}
 /*ASIDE*/
 
 /*MAIN*/
 
 /*FOOTER*/
 
+/*---------------------*/
 /*MEDIA QUERIES*/
+/*---------------------*/
+@media screen and (max-width: 960px) @media screen and (max-width: 640px);
