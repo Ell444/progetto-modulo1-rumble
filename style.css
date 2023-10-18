@@ -22,7 +22,7 @@ body {
     "as na"
     "as ma"
     "as fo";
-  grid-template-columns: 200px 1fr;
+  grid-template-columns: 100px 1fr;
   grid-template-rows: 69px 60px 1fr 88px;
 }
 
@@ -43,6 +43,26 @@ body > main {
 body > footer {
   grid-area: fo;
   background-color: magenta;
+}
+.title-btn-container {
+  display: flex;
+  justify-content: space-between;
+}
+.title-btn-container > button {
+  background-color: transparent;
+  border: 1px solid #74cc1d;
+  border-radius: 1.5rem;
+  font-size: 14px;
+  padding: 0.5rem 0.8rem;
+  outline: none;
+}
+.text-container > strong {
+  font-size: 14px;
+}
+.text-container > p {
+  font-size: 12px;
+  font-weight: 200;
+  color: hsl(0, 2%, 42%);
 }
 
 /*HEADER*/
@@ -119,7 +139,7 @@ body > header > section {
   padding: 0 2.5rem;
 }
 .main-text > h4 {
-  color: darkgray;
+  color: hsl(0, 2%, 42%);
   font-weight: 200;
 }
 .main-text > h3 {
@@ -136,9 +156,23 @@ body > header > section {
   border-radius: 50%;
 }
 
+.video-row {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+  border-bottom: 1px solid lightgray;
+}
+.img-container > img {
+  border-radius: 0.5rem;
+}
+.title-btn-container {
+  padding: 1rem;
+}
+
 /*FOOTER*/
 
 /*---------------------*/
 /*MEDIA QUERIES*/
 /*---------------------*/
+
 @media screen and (max-width: 960px) @media screen and (max-width: 640px);
