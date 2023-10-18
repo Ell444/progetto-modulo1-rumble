@@ -25,6 +25,7 @@ body {
   grid-template-rows: 69px 60px 1fr 88px;
 }
 /*GENERICI*/
+
 body > header {
   grid-area: he;
 }
@@ -45,7 +46,10 @@ a {
   text-decoration: none;
   color: hsl(0, 0%, 0%);
 }
-
+body {
+  overflow: auto;
+  transition: 0.5;
+}
 .title-btn-container {
   display: flex;
   justify-content: space-between;
@@ -78,7 +82,7 @@ a {
   color: hsl(0, 2%, 42%);
 }
 aside {
-  overflow: auto;
+  overflow: auto; /*Si applicava finché non ho tolto overflow al main per metterlo al body.*/
   border-right: 1px solid lightgray;
 }
 
@@ -170,9 +174,8 @@ body > header > section {
 
 /*NAV*/
 nav {
-  overflow: auto;
+  overflow: auto; /*Non si applica*/
 }
-
 .nav-container {
   display: flex;
   align-items: center;
@@ -193,7 +196,7 @@ nav {
 
 /*MAIN*/
 main {
-  overflow: auto;
+  /*overflow: auto;*/
 }
 .top-main {
   display: flex;
@@ -285,4 +288,44 @@ body > footer > section {
 /*MEDIA QUERIES*/
 /*---------------------*/
 
-@media screen and (max-width: 960px) @media screen and (max-width: 640px);
+@media screen and (max-width: 960px) {
+  body {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "he"
+      "na"
+      "ma"
+      "fo";
+  }
+  body > aside {
+    display: none;
+  }
+  .tablet-hide {
+    display: none;
+  }
+  body > footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 1rem 0;
+  }
+}
+@media screen and (max-width: 640px) {
+  body {
+    grid-template-columns: 1fr;
+  }
+  .search-bar-section > input {
+    display: none;
+  }
+  .search-bar-section > button {
+    margin-left: 150px; /*Usato perché "margin-left:auto" non dava risultati*/
+    border: none;
+  }
+  .top-main {
+    flex-direction: column;
+  }
+  .smartphone-hide {
+    display: none;
+  }
+}
