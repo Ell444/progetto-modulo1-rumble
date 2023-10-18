@@ -28,6 +28,7 @@ body {
 
 body > header {
   grid-area: he;
+  background-color: #f3f5f8;
 }
 body > aside {
   grid-area: as;
@@ -39,10 +40,10 @@ body > nav {
 }
 body > main {
   grid-area: ma;
+  background-color: #e4e4e8;
 }
 body > footer {
   grid-area: fo;
-  background-color: magenta;
 }
 .title-btn-container {
   display: flex;
@@ -171,6 +172,38 @@ body > header > section {
 
 /*FOOTER*/
 
+body > footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 2rem;
+}
+
+body > footer > section {
+  display: flex;
+  align-items: center;
+}
+
+footer > section > a {
+  text-decoration: none;
+  color: black;
+}
+.about-us,
+.terms {
+  gap: 1.5rem;
+}
+
+.about-us {
+  font-size: 14px;
+  font-weight: 500;
+  padding-left: 3.5rem;
+}
+.terms {
+  font-size: 12px;
+}
+.copyright {
+  font-size: 12px;
+  color: #8b98a2;
+}
 /*---------------------*/
 /*MEDIA QUERIES*/
 /*---------------------*/
