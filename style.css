@@ -11,7 +11,7 @@
 }
 
 img {
-  width: 100%;
+  max-width: 100%;
 }
 
 body {
@@ -125,8 +125,15 @@ body > header > section {
 .main-text > h3 {
   font-size: 22px;
 }
-.main-text > p {
-  font-size: 15px;
+.profile {
+  display: flex;
+  gap: 0.5rem;
+}
+.secondary-text > p {
+  font-size: 13px;
+}
+.profile > div > img {
+  border-radius: 50%;
 }
 
 /*FOOTER*/
