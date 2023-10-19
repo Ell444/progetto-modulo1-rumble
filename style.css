@@ -1,6 +1,14 @@
 :root {
   font-size: 16px;
   font-family: sans-serif;
+  --bgc-primary: #f4f4f4;
+  --bgc-secondary: #8b98a2;
+  --custom-green: #74cc1d;
+  --text-primary: #000000;
+  --font-size-l: 22px;
+  --font-size-m: 14px;
+  --font-size-S: 12px;
+  --font-size-xs: 10px;
 }
 
 * {
@@ -44,7 +52,7 @@ body > footer {
 }
 a {
   text-decoration: none;
-  color: hsl(0, 0%, 0%);
+  color: var(--text-primary);
 }
 body {
   overflow: auto;
@@ -56,28 +64,28 @@ body {
 }
 .title-btn-container > button {
   background-color: transparent;
-  border: 1px solid #74cc1d;
+  border: 1px solid var(--custom-green);
   border-radius: 1.5rem;
-  font-size: 14px;
+  font-size: var(--font-size-m);
   padding: 0.5rem 0.8rem;
   outline: none;
 }
 .title-btn-container > button:hover {
-  background-color: #74cc1d;
+  background-color: var(--custom-green);
 }
 #sign-in-btn:hover {
-  background-color: #eaeaea;
+  background-color: var(--bgc-primary);
   cursor: pointer;
 }
 #sign-up-btn:hover {
-  background-color: #eaeaea;
+  background-color: var(--bgc-primary);
   cursor: pointer;
 }
 .text-container > strong {
-  font-size: 14px;
+  font-size: var(--font-size-m);
 }
 .text-container > p {
-  font-size: 12px;
+  font-size: var(--font-size-S);
   font-weight: 200;
   color: hsl(0, 2%, 42%);
 }
@@ -90,7 +98,7 @@ aside::-webkit-scrollbar {
   visibility: hidden;
 }
 .aside-titles {
-  font-size: 10px;
+  font-size: var(--font-size-xs);
 }
 
 /*HEADER*/
@@ -111,9 +119,9 @@ body > header > section {
 }
 .btn-section > button {
   background-color: transparent;
-  border: 3px solid #74cc1d;
+  border: 3px solid var(--custom-green);
   border-radius: 1.5rem;
-  font-size: 14px;
+  font-size: var(--font-size-m);
   padding: 0.7rem 1rem;
   outline: none;
 }
@@ -123,7 +131,7 @@ body > header > section {
 
 .search-bar-section > input {
   height: 33px;
-  border: 1px solid lightgray;
+  border: 1px solid lightgrey;
   border-right: none;
   border-top-left-radius: 0.5rem;
   border-bottom-left-radius: 0.5rem;
@@ -153,7 +161,7 @@ body > header > section {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  font-size: 10px;
+  font-size: var(--font-size-xs);
   gap: 1.5rem;
   list-style-type: none;
   padding: 1.5rem;
@@ -168,7 +176,7 @@ body > header > section {
 .theme-container {
   text-align: center;
   gap: 1.5rem;
-  font-size: 10px;
+  font-size: var(--font-size-xs);
   padding: 1rem 0;
 }
 
@@ -184,13 +192,13 @@ nav {
 }
 
 .nav-container > section > span {
-  background-color: #f2efef;
+  background-color: var(--bgc-primary);
   border-radius: 1.5rem;
   padding: 0.5rem;
-  font-size: 14px;
+  font-size: var(--font-size-m);
 }
 .nav-container > section > span:hover {
-  background-color: #8b98a2;
+  background-color: var(--bgc-secondary);
   cursor: pointer;
 }
 
@@ -203,7 +211,7 @@ main {
   align-items: center;
   justify-content: center;
   padding: 2rem 2rem;
-  background-color: #e9ebee;
+  background-color: var(--bgc-primary);
   border-bottom: 1px solid lightgrey;
 }
 
@@ -217,11 +225,11 @@ main {
   padding: 0 2.5rem;
 }
 .main-text > h4 {
-  color: hsl(0, 2%, 42%);
+  color: var(--bgc-secondary);
   font-weight: 200;
 }
 .main-text > h3 {
-  font-size: 22px;
+  font-size: var(--font-size-l);
 }
 .profile {
   display: flex;
@@ -266,13 +274,13 @@ body > footer > section {
 }
 
 .about-us {
-  font-size: 14px;
+  font-size: var(--font-size-m);
   font-weight: 500;
   padding-left: 3.5rem;
 }
 .terms,
 .copyright {
-  font-size: 12px;
+  font-size: var(--font-size-S);
 }
 
 .terms > a:hover {
@@ -282,7 +290,7 @@ body > footer > section {
   text-decoration: underline;
 }
 .copyright {
-  color: #8b98a2;
+  color: var(--bgc-secondary);
 }
 /*---------------------*/
 /*MEDIA QUERIES*/
